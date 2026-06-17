@@ -24,6 +24,9 @@ werkzeug>=3.1.6,<4.0.0
 flask>=3.1.3,<4.0.0
 # flask-babel 3.x imports removed Flask internals; 4.0+ is required for Flask 3
 flask-babel>=4.0.0,<5.0.0
+# flask-sqlalchemy 2.x imports removed Flask internals; 3.0+ is required for Flask 3
+# Capped at <3.1 to preserve SQLAlchemy 1.4 compatibility
+flask-sqlalchemy>=3.0.0,<3.1
 # Security: CVE-2025-68146 - TOCTOU symlink vulnerability
 filelock>=3.20.3,<4.0.0
 # Security: decompression bomb fix (required by aiohttp 3.13.3)
